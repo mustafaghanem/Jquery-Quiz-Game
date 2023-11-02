@@ -8,6 +8,7 @@ function randomAnswerArray(array) {
     const random = Math.floor(Math.random() * (i + 1));
     [array[i], array[random]] = [array[random], array[i]];
   }
+  return array;
 }
 
 function showQuestion() {
