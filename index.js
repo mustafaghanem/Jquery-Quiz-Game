@@ -21,7 +21,7 @@ function showQuestion() {
     $("#question").addClass("summary-question").html("Quiz completed!");
     clearAnswers();
     $("#answer-btn").html(
-      `You answered  ${score} out of ${questions.length}  questions correctly.`
+      `You answered ${score} out of ${questions.length} questions correctly.`
     );
     $("#next").hide();
   }
@@ -69,8 +69,6 @@ function renderAnswers(correctAnswer, incorrectAnswers) {
     }
     answerButtons.off("click");
     answerButtons.prop("disabled", true);
-    $("#next").prop("disabled", false);
-    answerButtons.off("click").prop("disabled", true);
     $("#next").prop("disabled", false);
   });
 }
